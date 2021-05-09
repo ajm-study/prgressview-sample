@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-fluid" id="app">
+    <div class="identifier">
+      <div>
+        <select name="" class="input m-2">
+          <option value="" hidden selected>パート</option>
+          <option value="">鼓笛男子</option>
+          <option value="">鼓笛女子</option>
+          <option value="">ガード男子</option>
+        </select>
+      </div>
+      
+      <div>
+        <select name="" class="input m-2">
+          <option value="" hidden selected>氏名</option>
+          <option value="">aaa aaa</option>
+          <option value="">bbb bbb</option>
+          <option value="">ccc ccc</option>
+          <option value="">ddd ddd</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12 text-white title">数学小テスト記録</div>
+    </div>
+    
+    <div class="row">
+      <table v-for="data in testData" class="col-lg-1 table-bordered col-sm-4 progressTable">
+        <tr class="table-primary">
+          <td><a :href="data.link" v-html="data.name"></a></td>
+        </tr>
+        <tr>
+          <td v-html="data.progress"></td>
+        </tr>
+      </table>
+      
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <script src="script.js"></script>
+</body>
+</html>

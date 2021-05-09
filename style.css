@@ -1,0 +1,32 @@
+.identifier {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  background-color: #2E75B6;
+  text-align: center;
+  /* height: 2em; */
+  padding: .5em;
+  /* columns: white; */
+}
+
+.progressTable {
+  text-align: center;
+}
+
+table.table-bordered > tbody > tr > td {
+  margin: 0;
+  border: 1px solid #2E75B6;
+}
+
+.input {
+  border-radius: 0.25em;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: #2E75B6;
+  /* font-size: ; */
+  width: 10em;
+  height: 3rem;
+}
